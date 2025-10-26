@@ -9,14 +9,29 @@ import placementLogo from "/images/dashboard-logo/placement.svg";
 import settingsLogo from "/images/dashboard-logo/settings.svg";
 
 //* ------------------IMPORT COMPONENTS------------------
+import AdminDashboard from "../pages/Admin/AdminDashboard";
+import ProfileSettingsPage from "../pages/Common/settings/Profile";
+import Notifications from "../pages/Common/Notifications";
 
 
 export const adminPaths = [
   {
     path: "overview",
-    element: <div>HI</div>,
+    element: <AdminDashboard />,
     key: "overview",
     name: "Dashboard",
     icon: dashboardLogo,
+  },
+  {
+    path: "profile",
+    element: <ProfileSettingsPage />,
+    key: "profile",
+    name: "Profile",
+    icon: settingsLogo,
+  },
+  {
+    path: "notifications",
+    element: <Notifications />,
+    key: "notifications",
   },
 ];
