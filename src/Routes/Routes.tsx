@@ -7,6 +7,7 @@ import { useEffect } from "react";
 
 import Loading from "../ui/Loading";
 import { routeGenerator } from "../utils/routesGenerator";
+import { adminPaths } from "./admin.route";
 import ProtectedRoute from "./ProtectedRoute";
 
 //* Auth
@@ -18,7 +19,6 @@ import UpdatePassword from "../pages/Auth/UpdatePassword";
 import NotFound from "../ui/NotFound/NotFound";
 import DashboardLayout from "../Components/Layout/DashboardLayout";
 import useUserData from "../hooks/useUserData";
-import { adminPaths } from "./admin.route";
 
 // eslint-disable-next-line react-refresh/only-export-components
 function AuthRedirect() {
